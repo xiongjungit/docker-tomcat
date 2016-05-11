@@ -7,6 +7,8 @@ ADD sources.list /etc/apt/sources.list
 
 ENV JAVA_VER 7
 ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
+ENV TZ "Asia/Shanghai"
+ENV TERM xterm
 
 RUN echo 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /etc/apt/sources.list && \
     echo 'deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /etc/apt/sources.list && \

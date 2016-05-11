@@ -6,6 +6,8 @@ ADD sources.list /etc/apt/sources.list
 # Install Oracle Java 8
 ENV JAVA_VER 8
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+ENV TZ "Asia/Shanghai"
+ENV TERM xterm
 
 RUN echo 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /etc/apt/sources.list && \
     echo 'deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /etc/apt/sources.list && \
