@@ -1,4 +1,5 @@
-FROM daocloud.io/library/ubuntu:latest
+#FROM daocloud.io/library/ubuntu:latest
+FROM daocloud.io/library/ubuntu:l4.04
 MAINTAINER xiongjun <fenyunxx@163.com>
 
 ADD sources.list /etc/apt/sources.list
